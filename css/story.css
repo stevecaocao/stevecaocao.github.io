@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import url("../webfonts/SourceHanSerifCN_Medium/stylesheet.css");
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header {
+    width: 100%;
+    height: 50px;
+	min-width: 1280px;
+    background-color: #0d1628;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.header-inner {
+    width: 75%;
+    height: 50px;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    min-width: 960px;	
+}
+.logo {
+    background-image: url(../image/logo.png);
+    width: 259px;
+    height: 50px;
+    float: left;
+	background-size: 259px 50px;
+}
+.option {
+    width: 420px;
+    height: 50px;
+    float: right;
+	color: #FFFFFF;
+}
+.option-font {
+	width: 60px;
+    height: 50px;
+    float: left;
+    margin-right: 60px;
+    font-family: SourceHanSans-Bold;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+	letter-spacing: 2px;
+}
+.option-font-end {
+	width: 60px;
+    height: 50px;
+    float: left;
+    font-family: SourceHanSans-Bold;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+	letter-spacing: 2px;
+}
+a.font-h:hover{
+	transition: color 0.5s;
+	color: #d1879e;
+	font-size: 19px;
+}
+.chapter {
+	width: 100%;
+    height: 610px;
+	min-width: 1280px;
+    background-color: #0d1628;
+    padding-top: 60px;
+}
+.chapter-context{
+	width: 75%;
+    height: 380px;
+	min-width: 960px;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+.context{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+.chapter-photos {
+    width: 100%;
+    height: 200px;
+	min-width: 1280px;
+	overflow: hidden;
+}
+.chapter-photos img{
+	width: auto;
+	height: 200px;
+	animation-name: roll1;
+	position: relative;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 60s;
+}
+@keyframes roll1{
+	0%{left: 0px; top: 0px;}
+	100%{left: -2487px; top: 0px;}
+}
+.footer {
+    width: 100%;
+    height: 60px;
+    min-width: 1280px;
+    background-color: #0d1628;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.footer-inner {
+    width: 75%;
+    height: 60px;
+    min-width: 960px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+.copyright {
+    width: 960px;
+    height: 60px;
+    color: #FFFFFF;
+    font-family: SourceHanSans-Bold;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
